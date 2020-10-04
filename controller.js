@@ -20,7 +20,7 @@ exports.index = (req, res) => {
 exports.new = (req, res) => {
     let todo = new Todo()
     todo.description = req.body.description
-    todo.status = false
+    todo.status = req.body.status ? req.body.status : false
     todo.save((err) => {
         if (err) {
             res.json({
@@ -29,6 +29,7 @@ exports.new = (req, res) => {
             })
         } else {
             res.json({
+                status: 'success',
                 message: 'New task added!',
                 data: todo
             })
@@ -45,6 +46,7 @@ exports.view = (req, res) => {
             })
         } else {
             res.json({
+                status: 'success',
                 message: 'Task retrieved successfully',
                 data: todo
             })
@@ -65,6 +67,7 @@ exports.update = (req, res) => {
                 })
             } else {
                 res.json({
+                    status: 'success',
                     message: 'Task updated!',
                     data: todo
                 })
@@ -75,7 +78,7 @@ exports.update = (req, res) => {
 }
 
 exports.delete = (req, res) => {
-    Todo.remove({
+    Todo.deleteOne({
         _id: req.params.id 
     }, (err, todo) => {
         if (err) {
