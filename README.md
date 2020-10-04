@@ -8,7 +8,12 @@ In a new terminal window, go into the project folder and run the following comma
 
 ```
 npm install
-node index
+npm start
 ```
 
 The server is now listening on port 5001.
+
+To run tests locally, run the following command:
+```
+npm test
+```
