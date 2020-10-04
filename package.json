@@ -1,0 +1,24 @@
+{
+  "name": "cs3219_taskb",
+  "version": "1.0.0",
+  "description": "Submission for CS3219 OTOT Assignment Task B",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whyjayxp/CS3219_OTOT_TaskB.git"
+  },
+  "author": "Phua Yue Jun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whyjayxp/CS3219_OTOT_TaskB/issues"
+  },
+  "homepage": "https://github.com/whyjayxp/CS3219_OTOT_TaskB#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.7"
+  }
+}
