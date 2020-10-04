@@ -1,4 +1,6 @@
 # CS3219_OTOT_TaskB
+[![Build Status](https://travis-ci.org/whyjayxp/CS3219_OTOT_TaskB.svg?branch=main)](https://travis-ci.org/whyjayxp/CS3219_OTOT_TaskB)
+
 After cloning the repo, run the following command:
 ```
 mongod
